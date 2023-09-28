@@ -1,2 +1,3 @@
 # Random animal generator
 View random images of: bears, dogs and cats!!!
+Only run Random animal generator.html and click View photo button to view one photo an for other photo click View photo button...
