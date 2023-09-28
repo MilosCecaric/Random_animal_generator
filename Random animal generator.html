@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random animal generator</title>
+	<script>
+		function randomImage() {
+			var sites = [
+				'https://placekitten.com',
+				'https://placedog.net',
+				'https://placebear.com'
+			];
+			
+			var randomSite = sites[Math.floor(Math.random() * sites.length)];
+			var width = Math.floor(Math.random() * 400) + 200;
+			var height = Math.floor(Math.random() * 400) + 200;
+			var imageUrl = randomSite + '/' + width + '/' + height;
+			var imageElement = document.getElementById('animal-image');
+			imageElement.src = imageUrl;
+			imageElement.alt = 'Animal from site ' + randomSite;
+		}
+	</script>
+</head>
+<body>
+	<h1>Random animal generator</h1>
+	
+	<button onclick="randomImage()">View photo</button>
+	<img id="animal-image" alt="Animal photo">
+</body>
+</html>
