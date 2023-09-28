@@ -1,2 +1,2 @@
-# Random_animal_generator
+# Random animal generator
 View random images of: bears, dogs and cats!!!
